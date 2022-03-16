@@ -1,0 +1,55 @@
+
+<view wx:for="{{zp}}" wx:key="index" >
+  <view style="height: 20rpx;"></view>
+  <view class="tuhe">
+    <image src="{{item.picture}}" class="tu" mode="widthFix" ></image>
+  </view>
+  <view class="title" >
+ 
+    <text class="titleq" >{{item.title}}</text>
+   
+  </view>  
+  <view style="height: 30rpx;"></view>
+  <view class="way">
+    <text  decode="true" style="width: 85%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.informatin}}</text>
+  </view>
+  <view style="height: 30rpx;"></view>
+  <view class="place">
+    <text  decode="true" class="place1" style="font-size: 28rpx;"> 活动地点:&nbsp;{{item.place}}</text>
+  </view>
+  <view style="height: 17rpx;"></view>
+  <view class="xq">
+ 
+    <view class="time"> 
+      <text decode="true" style="font-size: 35rpx;font-size: 28rpx;" >活动时间:&nbsp;&nbsp;&nbsp;{{item.starttime}} 至  {{item.endtime}}</text>
+      <view style="width: 20rpx;"></view>
+   
+    </view>
+  </view>
+    <view style="width: 50rpx;"></view>
+    <view style="float: right;" class="btn">
+    <view class="score" style="background-color:{{score}};" bindtap="gotoxiangqing" data-id="{{item.a_id}}">
+    <text class="ckxq">查看详情</text>
+    </view>
+  
+    </view>
+  
+  <view style="height: 25rpx;"></view>
+  <view class="hr"></view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

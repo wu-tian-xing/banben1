@@ -1,0 +1,25 @@
+
+<view class="tt"  >
+
+<text bindtap="qwe" class="dd">材料和工具</text>
+</view>
+<view wx:for="{{msxq}}" wx:key="list" >
+<view class="view-test">
+<text>{{item.writer}}</text>
+</view>
+<view class="tt">
+<text class="dd">制作的步骤</text>
+</view>
+
+<view class='imagesize'>
+<image src="{{item.pucture}}" class='size' mode="widthFix"></image>
+</view>
+<view class="details">
+  <view style="width: 85%;" >
+    <text>{{item.details1}}</text>
+  </view>
+</view>
+
+</view>
+
+

@@ -1,0 +1,54 @@
+<view  class="a">
+
+<view>
+<text>活动名称：{{hdxq.title}}</text>
+</view>
+<view>
+<text>活动标签：{{hdxq.sort}}</text>
+</view>
+<view>
+<text>活动方式：{{hdxq.way}}</text>
+</view>
+<view>
+<text>召集人数：{{hdxq.needpeople}}人</text>
+</view>
+<view>
+<text>活动日期：{{hdxq.starttime}}-{{hdxq.endtime}}</text>
+</view>
+<view>
+<text>时间段：{{hdxq.starttime}}-{{hdxq.endtime}}</text>
+</view>
+<view>
+<text>地点详情：</text>
+</view>
+<view>
+<text decode="true">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  {{hdxq.place}}</text>
+</view>
+<view>
+<text>活动详情：
+</text>
+</view>
+<view>
+<text  decode="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  {{hdxq.informatin}}</text>
+</view>
+
+
+<view  >
+<view wx:if="{{sty==0}}"  class="qwe" >
+  <view class="score" style="background-color:{{score}};"  data-id="{{hdxq.a_id}}"  catchtap='score'>
+    <text>参加</text>
+  </view>
+</view>
+</view>
+
+<view  >
+<view wx:if="{{sty==1}}" class="qwe" >
+  <view class="score" style="background-color:{{score}};" data-id="{{hdxq.a_id}}" catchtap='score1'>
+    <text>退出</text>
+  </view>
+</view>
+
+
+
+</view>
+</view>
